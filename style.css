@@ -1,0 +1,90 @@
+/* Mengatur font dasar dan margin */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Styling untuk header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk bagian utama */
+main {
+    padding: 40px 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.text-section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #005f75;
+}
+
+/* Styling untuk gambar */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query untuk layar lebih besar */
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .text-section {
+        text-align: left;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
